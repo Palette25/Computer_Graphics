@@ -1,0 +1,13 @@
+#version 330 core
+
+// Ouput data
+out vec4 oColor;
+
+// Input data
+in vec2 outColor;
+
+uniform sampler2D texture1;
+
+void main(){
+	oColor = texture(texture1, outColor);
+}
