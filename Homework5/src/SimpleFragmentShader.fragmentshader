@@ -1,0 +1,11 @@
+#version 330 core
+
+// Ouput data
+out vec3 oColor;
+
+// Input data
+in vec3 outColor;
+
+void main(){
+	oColor = vec3(outColor/255.0f);
+}
